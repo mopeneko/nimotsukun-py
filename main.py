@@ -121,7 +121,7 @@ def game_main():
     diff_target_idx = stage_width * diff_y + diff_x
     target_idx = player.get_pos() + diff_target_idx
     target = states[target_idx]
-    
+
     if target == State.SPACE:
         states[player.get_pos()] = State.SPACE
         player.move(diff_x, diff_y)
@@ -159,4 +159,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
